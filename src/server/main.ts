@@ -20,6 +20,11 @@ app.post('/badges', (req, res) => {
       image: 'https://ssl.pstatic.net/static/nng/glive/icon/manager.png',
     },
     {
+      id: 'verified',
+      name: '인증 마크',
+      image: 'https://ssl.pstatic.net/static/nng/glive/resource/p/static/media/icon_official.a53d1555f8f4796d7862.png',
+    },
+    {
       id: 'fan_1',
       name: '후원 팬',
       image: 'https://ssl.pstatic.net/static/nng/glive/icon/fan.png',
