@@ -1,8 +1,14 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import { morganMiddleware } from "./logger/morganMiddleware.js";
+import cors from 'cors';
 
 const app = express();
+const allowedOrigin = [
+    'https://badgecollector.dev',
+    /^chrome-extension:\/\/.*/
+]
+app.use(cors({origin: allowedOrigin}))
 app.use(express.json());
 app.use(morganMiddleware);
 
